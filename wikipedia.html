@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wikipedia Search</title>
+  <link rel="stylesheet" href="wikipedia.css" />
+  <script src="wikipedia.js" defer></script>
+</head>
+<body>
+  <div class="main-container">
+    <div class="wiki-search-header text-center">
+      <img class="wiki-logo" src="https://nkb-backend-otg-media-static.s3.ap-south-1.amazonaws.com/ccbp-dynamic-webapps/wiki-logo-img.png" />
+      <br />
+      <input placeholder="Type a keyword and press Enter to search" type="search" class="search-input w-100" id="searchInput" />
+    </div>
+    <div class="d-none" id="spinner">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only"></span>
+        </div>
+      </div>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</body>
+</html>
